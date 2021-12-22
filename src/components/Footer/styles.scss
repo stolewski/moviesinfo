@@ -1,0 +1,35 @@
+.footer {
+  padding: 50px 0;
+  color: #fff;
+  background-color: #3a3a3a;
+  p {
+    text-align: center;
+    font-size: 20px;
+  }
+  .made,
+  .myName {
+    text-align: end;
+    display: block;
+    font-weight: 700;
+  }
+  .made {
+    font-size: 18px;
+  }
+  .myName {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .made {
+    margin-top: 50px;
+  }
+  p {
+    margin-top: 35px;
+  }
+
+  svg {
+    display: block;
+    margin: 0 auto;
+  }
+}

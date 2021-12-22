@@ -1,0 +1,18 @@
+.singleMovie {
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 190px 0 95px;
+  padding: 40px 90px;
+}
+
+@media (max-width: 991px) {
+  .singleMovie {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .singleMovie {
+    margin: 70px 0 70px;
+  }
+}

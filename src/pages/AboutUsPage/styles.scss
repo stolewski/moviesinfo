@@ -1,0 +1,34 @@
+.aboutUs {
+  margin: 177px 0 100px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 90px;
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .about__text {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .aboutUs {
+    img {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .aboutUs {
+    padding: 40px 15px;
+    margin: 70px 0 70px;
+  }
+}
