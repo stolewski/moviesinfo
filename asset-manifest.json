@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/moviesinfo/static/css/main.7b4c673b.css",
+    "main.js": "/moviesinfo/static/js/main.80533491.js",
+    "static/media/mainBg.png": "/moviesinfo/static/media/mainBg.99e07979a6a2ce9d5e55.png",
+    "static/media/aboutImg.jpg": "/moviesinfo/static/media/aboutImg.2022052b819182894b9e.jpg",
+    "static/media/logo.svg": "/moviesinfo/static/media/logo.6a326c1876ef9e1274793b0c109c3b36.svg",
+    "index.html": "/moviesinfo/index.html",
+    "main.7b4c673b.css.map": "/moviesinfo/static/css/main.7b4c673b.css.map",
+    "main.80533491.js.map": "/moviesinfo/static/js/main.80533491.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b4c673b.css",
+    "static/js/main.80533491.js"
+  ]
+}
