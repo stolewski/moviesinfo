@@ -1,4 +1,3 @@
-const routeMovieDetail = (id: string = ':id'): string =>
-  `/moviesinfo/movies/${id}`;
+const routeMovieDetail = (id: string = ':id'): string => `/movies/${id}`;
 
 export default routeMovieDetail;

@@ -1,3 +1,3 @@
-const routeAbout = () => '/moviesinfo/about';
+const routeAbout = () => '/about';
 
 export default routeAbout;

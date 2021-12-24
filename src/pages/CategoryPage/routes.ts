@@ -1,3 +1,3 @@
-const routeCategory = () => '/moviesinfo/category';
+const routeCategory = () => '/category';
 
 export default routeCategory;

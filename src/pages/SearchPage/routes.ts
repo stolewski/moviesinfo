@@ -1,3 +1,3 @@
-const routeSearch = () => '/moviesinfo/search';
+const routeSearch = () => '/search';
 
 export default routeSearch;

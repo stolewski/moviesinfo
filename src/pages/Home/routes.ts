@@ -1,3 +1,3 @@
-const routeHome = () => '/moviesinfo';
+const routeHome = () => '/moviesinfo/';
 
 export default routeHome;
