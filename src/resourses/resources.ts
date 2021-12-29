@@ -34,6 +34,6 @@ const wrapPromise = (promise: Promise<any>) => {
 };
 
 const fetchMainPosts = async () => {
-  const res = await axios.get('https://api.tvmaze.com/search/shows?q=smth');
+  const res = await axios.get('https://api.tvmaze.com/search/shows?q=world');
   return await res.data;
 };
