@@ -3,8 +3,8 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { ID } from 'types/Id';
-import { selectDetailMovie, selectLoading } from 'store/detailMovie/selectors';
-import { loadDetailMovie } from 'store/detailMovie/actions';
+import { selectDetailMovie, selectLoading } from 'store/movies/selectors';
+import { loadDetailMovie } from 'store/movies/actions';
 
 import './styles.scss';
 import Spinner from 'components/Spinner';

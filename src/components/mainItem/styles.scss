@@ -1,5 +1,6 @@
 .main-card {
   margin-bottom: 20px;
+  text-align: center;
   img {
     width: 100%;
     height: auto;
@@ -17,6 +18,10 @@
     font-size: 13px;
     font-weight: 400;
     color: #333;
+  }
+  .noPic {
+    margin: 100px auto 100px;
+    font-weight: 700;
   }
 }
 

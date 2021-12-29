@@ -1,20 +1,23 @@
-import MainItem from 'components/mainItem';
 import Spinner from 'components/Spinner';
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { loadMainPosts } from 'store/mainPosts/actions';
-import { selectLoading, selectMainPosts } from 'store/mainPosts/selectors';
+import React, { Suspense } from 'react';
+import MainList from 'components/mainList';
+import { useResource } from 'resourses/resources';
+import { IPost } from 'types/IPost';
 
 import './styles.scss';
 
-const Home = () => {
-  const dispatch = useDispatch();
-  const mainPostsList = useSelector(selectMainPosts);
-  const loading = useSelector(selectLoading);
+interface IResourse {
+  resourse: {
+    mainPosts: IMainPosts;
+  };
+}
 
-  useEffect(() => {
-    dispatch(loadMainPosts());
-  }, [dispatch]);
+interface IMainPosts {
+  read(): IPost[] | undefined;
+}
+
+const Home = () => {
+  const resource: IResourse['resourse'] = useResource();
 
   return (
     <section className='homePage'>
@@ -24,11 +27,9 @@ const Home = () => {
       </div>
       <div className='mainList-wrapper'>
         <div className='row'>
-          {loading && <Spinner />}
-          {mainPostsList.length > 0 &&
-            mainPostsList
-              .slice(0, 8)
-              .map(movie => <MainItem key={movie.show.id} data={movie} />)}
+          <Suspense fallback={<Spinner />}>
+            <MainList resource={resource} />
+          </Suspense>
         </div>
       </div>
     </section>

@@ -1,20 +1,10 @@
-import { applyMiddleware, combineReducers, createStore } from 'redux';
+import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
-import catReducer from './categoryPosts/reducers';
-import mainReducer from './mainPosts/reducers';
-import detailReducer from './detailMovie/reducers';
-import searchReducer from './searchPosts/reducers';
-
-const rootReducer = combineReducers({
-  catReducer,
-  mainReducer,
-  detailReducer,
-  searchReducer,
-});
+import mainReducer from './movies/reducers';
 
 const store = createStore(
-  rootReducer,
+  mainReducer,
   composeWithDevTools(applyMiddleware(thunk))
 );
 

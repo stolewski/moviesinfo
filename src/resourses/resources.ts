@@ -3,7 +3,7 @@ import { IPost } from 'types/IPost';
 
 export const useResource = () => {
   return {
-    categoryPosts: wrapPromise(fetchCatPosts()),
+    mainPosts: wrapPromise(fetchMainPosts()),
   };
 };
 
@@ -33,7 +33,7 @@ const wrapPromise = (promise: Promise<any>) => {
   };
 };
 
-const fetchCatPosts = async () => {
-  const res = await axios.get('https://api.tvmaze.com/search/shows?q=crazy');
+const fetchMainPosts = async () => {
+  const res = await axios.get('https://api.tvmaze.com/search/shows?q=smth');
   return await res.data;
 };

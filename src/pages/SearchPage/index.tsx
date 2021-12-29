@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { loadSearchPosts } from 'store/searchPosts/actions';
+import { loadSearchPosts } from 'store/movies/actions';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectLoading, selectSearchPosts } from 'store/searchPosts/selectors';
+import { selectLoading, selectSearchPosts } from 'store/movies/selectors';
 import CategoryItem from 'components/CategoryItem';
 import Spinner from 'components/Spinner';
 import './styles.scss';
