@@ -14,6 +14,9 @@ const SearchPage = () => {
 
   const searchHandler = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (!query.trim()) {
+      return;
+    }
     dispatch(loadSearchPosts(query));
   };
 
@@ -24,7 +27,7 @@ const SearchPage = () => {
           type='text'
           value={query}
           placeholder='Example: drama'
-          onChange={e => setQuery(e.target.value.trim())}
+          onChange={e => setQuery(e.target.value)}
         />
         <button type='submit'>Go</button>
       </form>
