@@ -14,10 +14,9 @@ const SearchPage = () => {
 
   const searchHandler = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (!query.trim()) {
-      return;
+    if (query.trim()) {
+      dispatch(loadSearchPosts(query));
     }
-    dispatch(loadSearchPosts(query));
   };
 
   return (
